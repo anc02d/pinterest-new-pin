@@ -34,10 +34,14 @@
 			<li class="site">Site: Saves to database, Goes back to pin feed and gives a pop-up "saved" message at bottom</li>
 		</ol>
 		<h3>Conceptual Model</h3>
-		<ul>
-			<li>One user can upload many pins</li>
-			<li>Users can like many pins</li>
-			<li>Pins can be repinned many times by multiple users</li>
-		</ul>
+			<h4>Entities & Attributes</h4>
+				<h5>PROFILE</h5>
+				<h5>PIN</h5>
+			<h4>Relations</h4>
+			<ul>
+				<li>One user can upload many pins</li>
+				<li>Users can like many pins</li>
+				<li>Pins can be repinned many times by multiple users</li>
+			</ul>
 	</body>
 </html>
