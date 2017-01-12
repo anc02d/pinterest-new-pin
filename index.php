@@ -46,14 +46,13 @@
 				</ul>
 				<h5>BOARD</h5>
 				<ul>
-					<li>boardId</li>
+					<li>boardId (primary key)</li>
+					<li>profileId (foreign key)</li>
 					<li>boardName</li>
-					<li>profileId</li>
 				</ul>
 				<h5>PIN</h5>
 				<ul>
 					<li>pinId (primary key)</li>
-					<li>pinProfileBoard (foreign key)</li>
 					<li>pinTitle</li>
 					<li>pinDescription</li>
 					<li>pinImage</li>
