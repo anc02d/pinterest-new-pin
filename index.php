@@ -53,6 +53,7 @@
 				<h5>PIN</h5>
 				<ul>
 					<li>pinId (primary key)</li>
+					<li>boardId (foreign key)</li>
 					<li>pinTitle</li>
 					<li>pinDescription</li>
 					<li>pinImage</li>
