@@ -36,12 +36,39 @@
 		<h3>Conceptual Model</h3>
 			<h4>Entities & Attributes</h4>
 				<h5>PROFILE</h5>
+				<ul>
+					<li>profileId (primary key)</li>
+					<li>profileName</li>
+					<li>profileDescription</li>
+					<li>profileExternalLink</li>
+					<li>profilePasswordHash</li>
+					<li>profileSalt</li>
+				</ul>
+				<h5>BOARD</h5>
+				<ul>
+					<li>boardId</li>
+					<li>boardName</li>
+					<li>profileId</li>
+				</ul>
 				<h5>PIN</h5>
+				<ul>
+					<li>pinId (primary key)</li>
+					<li>pinProfileBoard (foreign key)</li>
+					<li>pinTitle</li>
+					<li>pinDescription</li>
+					<li>pinImage</li>
+					<li>pinOrigin</li>
+				</ul>
+				<h5>PIN BOARD</h5>
+				<ul>
+					<li>pinId (foreign key)</li>
+					<li>boardId (foreign key)</li>
+				</ul>
 			<h4>Relations</h4>
 			<ul>
-				<li>One user can upload many pins</li>
-				<li>Users can like many pins</li>
-				<li>Pins can be repinned many times by multiple users</li>
+				<li>One <strong>profile</strong> can have many <strong>boards</strong> (1-to-n)</li>
+				<li>Many <strong>pins</strong> can be saved to many <strong>boards</strong> (m-to-n)</li>
+				<li>One <strong>profiel</strong> can save many <strong> pins</strong> (1-to-n)</li>
 			</ul>
 	</body>
 </html>
