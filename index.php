@@ -34,5 +34,11 @@
 			<li>User: Enters a description, chooses a board to save to and taps on it</li>
 			<li>Site: Saves to database, Goes back to pin feed and gives a pop-up "saved" message at bottom</li>
 			</ol>
+		<h3>Conceptual Model</h3>
+		<ul>
+			<li>One user can upload many pins</li>
+			<li>Users can like many pins</li>
+			<li>Pins can be repinned many times by multiple users</li>
+		</ul>
 	</body>
 </html>
