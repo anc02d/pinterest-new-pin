@@ -14,12 +14,14 @@
 			<li>Occupation: college student living off student loans and daddy's money </li>
 			<li>Technology: iPhone7 and a Mac Book</li>
 			<li>Needs: to find a hairstyle for tomorrow's big date </li>
-			<li>Goals: to build a collection of inspiration and ideas for future reference </li>
+			<li>Goals: impress her social group with her creativity and to build a collection of inspiration and ideas for future reference </li>
 		</ul>
 		<h3>Use Case</h3>
-		<p>This is details of their use - i.e. pinning a new cool pic to reference later</p>
+		<p>Ashley is done with class for the day and looking forward to her big date with Brad tomorrow. She wants to impress him and knows that a new hairstyle will do the trick. So, she turns to Pinterest for some inspiration.</p>
+		<p>After opening the site on her iPhone app, she starts scrolling through her feed. She sees a hairstyle she likes and decides to pin it to her "Hair" board so it will be accessible tomorrow when she's getting ready.</p>
+		<p>She simply taps and holds on the picture she likes, and slides her finger to the "save" icon. Then, she is prompted to edit the description, and she chooses her "Hair" board as the location of her new pin.</p>
+		<p>Once she taps the board she wants, her pin feed reappears along with a message that her pin was saved. She then continues browsing for 6 hours instead of finishing her homework.</p>
 		<h3>Interaction Flow</h3>
-		<h4>How the interaction goes down.</h4>
 			<ol>
 			<li>User: Opens Pinterest app on phone</li>
 			<li>Site: Auto logs user in based on saved data and presents default pin feed screen</li>
