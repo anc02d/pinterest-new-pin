@@ -7,7 +7,7 @@
 	</head>
 	<body>
 		<h1>Data Design Project</h1>
-		<h2>Adding a New Pin on Pinterest.com</h2>
+		<h2>Adding a New Pin on <span class="siteName">Pinterest.com</span></h2>
 		<h3>User Persona</h3>
 		<ul>
 			<li><strong>Name:</strong>Ashley Smith</li>

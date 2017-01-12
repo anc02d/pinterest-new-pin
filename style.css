@@ -1,5 +1,5 @@
 .site {
-	color: crimson;
+	color: red;
 }
 
 .user {
@@ -9,4 +9,10 @@
 p {
 	text-align: justify;
 	margin: 10px 40px;
+}
+
+.siteName {
+	color: red;
+	font-weight: bold;
+	font-size: 125%;
 }
