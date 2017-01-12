@@ -5,3 +5,8 @@
 .user {
 	color: darkblue;
 }
+
+p {
+	text-align: justify;
+	margin: 40px;
+}
