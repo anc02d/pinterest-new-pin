@@ -13,7 +13,7 @@
 			<li><strong>Name:</strong>Ashley Smith</li>
 			<li><strong>Age:</strong> 24</li>
 			<li><strong>Occupation:</strong> college student living off student loans and daddy's money </li>
-			<li><strong>Technology:</strong> iPhone7 and a Mac Book running OS 10 Sierra</li>
+			<li><strong>Technology:</strong> iPhone7 and a Mac Book running OS X Sierra</li>
 			<li><strong>Needs:</strong> to find a hairstyle for tomorrow's big date </li>
 			<li><strong>Goals:</strong> impress her social group with her creativity and to build a collection of inspiration and ideas for future reference </li>
 		</ul>
