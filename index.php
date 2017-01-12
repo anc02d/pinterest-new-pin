@@ -23,16 +23,16 @@
 		<p>Once she taps the board she wants, her pin feed reappears along with a message that her pin was saved. She then continues browsing for the next 6 hours instead of finishing her homework.</p>
 		<h3>Interaction Flow</h3>
 			<ol>
-			<li>User: Opens Pinterest app on phone</li>
-			<li>Site: Auto logs user in based on saved data and presents default pin feed screen</li>
-			<li>User: Scrolls down to look at feed</li>
-			<li>Site: Loads more pins as user scrolls down</li>
-			<li>User: Sees a hairstyle pin she likes and wants to save to her boards, taps and holds on picture</li>
-			<li>Site: Pops up 3 icons - save, like, send</li>
-			<li>User: Drags finger onto "save" icon</li>
-			<li>Site: Opens choose board screen with user's boards</li>
-			<li>User: Enters a description, chooses a board to save to and taps on it</li>
-			<li>Site: Saves to database, Goes back to pin feed and gives a pop-up "saved" message at bottom</li>
+			<li class="user">User: Opens Pinterest app on phone</li>
+			<li class="site">Site: Auto logs user in based on saved data and presents default pin feed screen</li>
+			<li class="user">User: Scrolls down to look at feed</li>
+			<li class="site">Site: Loads more pins as user scrolls down</li>
+			<li class="user">User: Sees a hairstyle pin she likes and wants to save to her boards, taps and holds on picture</li>
+			<li class="site">Site: Pops up 3 icons - save, like, send</li>
+			<li class="user">User: Drags finger onto "save" icon</li>
+			<li class="site">Site: Opens choose board screen with user's boards</li>
+			<li class="user">User: Enters a description, chooses a board to save to and taps on it</li>
+			<li class="site">Site: Saves to database, Goes back to pin feed and gives a pop-up "saved" message at bottom</li>
 			</ol>
 		<h3>Conceptual Model</h3>
 		<ul>
