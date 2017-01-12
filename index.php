@@ -68,7 +68,7 @@
 			<ul>
 				<li>One <strong>profile</strong> can have many <strong>boards</strong> (1-to-n)</li>
 				<li>Many <strong>pins</strong> can be saved to many <strong>boards</strong> (m-to-n)</li>
-				<li>One <strong>profiel</strong> can save many <strong> pins</strong> (1-to-n)</li>
+				<li>One <strong>profile</strong> can save many <strong> pins</strong> (1-to-n)</li>
 			</ul>
 	</body>
 </html>
