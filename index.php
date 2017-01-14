@@ -4,7 +4,6 @@
 		<meta charset="utf-8">
 		<title>Pinterest New Pin</title>
 		<link rel="stylesheet" href="style.css" type="text/css">
-		<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
 	</head>
 	<body>
 		<h1>Data Design Project</h1>

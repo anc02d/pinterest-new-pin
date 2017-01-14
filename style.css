@@ -1,7 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+
 .site {
-	color: red;
-	font-family: 'Lobster', cursive;
-}
+	 color: red;
+ }
 
 .user {
 	color: darkblue;
@@ -14,6 +15,7 @@ p {
 
 .siteName {
 	color: red;
-	font-weight: bold;
+	font-weight: lighter;
 	font-size: 125%;
+	font-family: 'Lobster', cursive;
 }
