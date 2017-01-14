@@ -7,7 +7,8 @@
 	</head>
 	<body>
 		<h1>Data Design Project</h1>
-		<h2>Adding a New Pin on <span class="siteName">Pinterest.com</span></h2>
+		<h2>Adding a New Pin on <a href="https://www.pinterest.com/" target="_blank" alt="www.pinterest.com" class="siteName">Pinterest</a>
+		</h2>
 		<h3>User Persona</h3>
 		<ul>
 			<li><strong>Name:</strong>Ashley Smith</li>
@@ -57,10 +58,10 @@
 					<li>pinImage</li>
 					<li>pinOrigin</li>
 				</ul>
-				<h5>PIN BOARD</h5>
+				<h5>BOARD PIN</h5>
 				<ul>
-					<li>savePinId (foreign key)</li>
-					<li>saveBoardId (foreign key)</li>
+					<li>boardPinPinId (foreign key)</li>
+					<li>boardPinBoardId (foreign key)</li>
 				</ul>
 			<h4>Relations</h4>
 			<ul>
