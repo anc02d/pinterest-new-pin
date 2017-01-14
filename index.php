@@ -4,6 +4,7 @@
 		<meta charset="utf-8">
 		<title>Pinterest New Pin</title>
 		<link rel="stylesheet" href="style.css" type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
 	</head>
 	<body>
 		<h1>Data Design Project</h1>
@@ -40,7 +41,6 @@
 					<li>profileId (primary key)</li>
 					<li>profileName</li>
 					<li>profileDescription</li>
-					<li>profileExternalLink</li>
 					<li>profilePasswordHash</li>
 					<li>profileSalt</li>
 				</ul>
