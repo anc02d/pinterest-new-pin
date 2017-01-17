@@ -39,7 +39,7 @@
 				<h5>PROFILE</h5>
 				<ul>
 					<li>profileId (primary key)</li>
-					<li>profileName</li>
+					<li>profileAtHandle</li>
 					<li>profileDescription</li>
 					<li>profilePasswordHash</li>
 					<li>profileSalt</li>
@@ -47,7 +47,7 @@
 				<h5>BOARD</h5>
 				<ul>
 					<li>boardId (primary key)</li>
-					<li>profileId (foreign key)</li>
+					<li>boardProfileId (foreign key)</li>
 					<li>boardName</li>
 				</ul>
 				<h5>PIN</h5>
@@ -56,7 +56,7 @@
 					<li>pinTitle</li>
 					<li>pinDescription</li>
 					<li>pinImage</li>
-					<li>pinOrigin</li>
+					<li>pinUrl</li>
 				</ul>
 				<h5>BOARD PIN</h5>
 				<ul>
