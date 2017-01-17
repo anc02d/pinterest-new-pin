@@ -3,6 +3,7 @@ DROP TABLE IF EXISTS 'boardPin';
 DROP TABLE IF EXISTS pin;
 DROP TABLE IF EXISTS board;
 DROP TABLE IF EXISTS profile;
+
 -- creating the tables
 CREATE TABLE profile (
 	profileId INT UNSIGNED AUTO_INCREMENT NOT NULL,
@@ -35,6 +36,7 @@ CREATE TABLE pin (
 	PRIMARY KEY(pinId)
 );
 
+-- weak entity connecting Board and Pin
 CREATE TABLE 'boardPin' (
 	boardPinPinId INT UNSIGNED NOT NULL,
 	boardPinBoardId INT UNSIGNED NOT NULL,
