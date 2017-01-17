@@ -69,6 +69,7 @@
 				<li>Many <strong>pins</strong> can be saved to many <strong>boards</strong> (m-to-n)</li>
 				<li>One <strong>profile</strong> can save many <strong> pins</strong> (1-to-n)</li>
 			</ul>
+		<h3>Entity Relations Diagram</h3>
 		<img src="pinterest-new-pin.svg" alt="SVG ERD"/>
 	</body>
 </html>
