@@ -71,5 +71,6 @@
 			</ul>
 		<h3>Entity Relations Diagram</h3>
 		<img src="pinterest-new-pin.svg" alt="SVG ERD"/>
+		<footer>By Amber Noel Cothren</footer>
 	</body>
 </html>
