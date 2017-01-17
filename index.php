@@ -7,7 +7,7 @@
 	</head>
 	<body>
 		<h1>Data Design Project</h1>
-		<h2>Adding a New Pin on <a href="https://www.pinterest.com/" target="_blank" alt="www.pinterest.com" class="siteName">Pinterest</a>
+		<h2>Adding a New Pin on <a href="https://www.pinterest.com/" target="_blank" class="siteName">Pinterest</a>
 		</h2>
 		<h3>User Persona</h3>
 		<ul>
@@ -69,5 +69,6 @@
 				<li>Many <strong>pins</strong> can be saved to many <strong>boards</strong> (m-to-n)</li>
 				<li>One <strong>profile</strong> can save many <strong> pins</strong> (1-to-n)</li>
 			</ul>
+		<img src="pinterest-new-pin.svg" alt="SVG ERD"/>
 	</body>
 </html>
