@@ -45,7 +45,7 @@ class Profile {
 	 * @throws \TypeError if data types violate type hints
 	 * @throws \Exception if any other exception occurs
 	 */
-	public function __construct(int $newProfileId, string $newProfileAtHandle, string $newProfileDescription, string $newProfilePasswordHash, string $newProfileSalt) {
+	public function __construct(int $newProfileId = null, string $newProfileAtHandle, string $newProfileDescription, string $newProfilePasswordHash, string $newProfileSalt) {
 		try {
 			$this->setProfileId($newProfileId);
 			$this->setProfileAtHandle($newProfileAtHandle);
@@ -165,5 +165,21 @@ class Profile {
 			throw(new \RangeException("salt is not correct length"));
 		}
 		$this->profileSalt = $newProfileSalt;
+	}
+	/**
+	 * insert this profile into mySQL
+	 * @param \PDO $pdo connection object
+	 * @throws \PDOException for mySQL errors
+	 * @throws \TypeError if $pdo is not a PDO connection object
+	 */
+	public function insert(\PDO $pdo) {
+		if($this->profileId !== null) {
+			throw(new \PDOException("not a new profile id"));
+		}
+		$query = "INSERT INTO profile (profileId, profileAtHandle, profileDescription, profilePasswordHash, profileSalt) VALUES(:profileId, :profileAtHandle, :profileDescription, :profilePasswordHash, :profileSalt)";
+		$statement = $pdo->prepare($query);
+		$parameters = ["profileId" => $this->profileId, "profileAtHandle" => $this->profileAtHandle, "profileDescription"=> $this->profileDescription, "profilePasswordHash"=> $this->profilePasswordHash, "profileSalt"=> $this->profileSalt];
+		$statement->execute($parameters);
+		$this->profileId = intval($pdo->lastInsertId());
 	}
 }
