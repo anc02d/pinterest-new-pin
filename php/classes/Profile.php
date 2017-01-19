@@ -34,6 +34,36 @@ class Profile {
 	 **/
 	private $profileSalt;
 	/**
+	 * constructor for new profile
+	 * @param int $newProfileId
+	 * @param string $newProfileAtHandle
+	 * @param string $newProfileDescription
+	 * @param string $newProfilePasswordHash
+	 * @param string $newProfileSalt
+	 * @throws \InvalidArgumentException if data types are not vaild
+	 * @throws \RangeException if data values are out of range
+	 * @throws \TypeError if data types violate type hints
+	 * @throws \Exception if any other exception occurs
+	 */
+	public function __construct(int $newProfileId, string $newProfileAtHandle, string $newProfileDescription, string $newProfilePasswordHash, string $newProfileSalt) {
+		try {
+			$this->setProfileId($newProfileId);
+			$this->setProfileAtHandle($newProfileAtHandle);
+			$this->setProfileDescription($newProfileDescription);
+			$this->setProfilePasswordHash($newProfilePasswordHash);
+			$this->setProfileSalt($newProfileSalt);
+		} catch(\InvalidArgumentException $invalidArgument) {
+			throw(new \InvalidArgumentException($invalidArgument->getMessage(), 0, $invalidArgument));
+		} catch(\RangeException $rangeException) {
+			throw(new \RangeException($rangeException->getMessage(), 0, $rangeException));
+		} catch(\TypeError $typeError) {
+			throw(new \TypeError($typeError->getMessage(), 0, $typeError));
+		} catch(\Exception $exception) {
+			throw(new \Exception($exception->getMessage(), 0, $exception));
+		}
+	}
+
+	/**
 	 * accessor method for profile id
 	 * @return int value of profile id
 	 */
@@ -55,7 +85,7 @@ class Profile {
 		$this->profileId = $newProfileId;
 	}
 	/**
-	 * accesor method for profile at handle
+	 * accessor method for profile at handle
 	 * @return string $newProfileAtHandle
 	 */
 	public function getProfileAtHandle() {
@@ -82,6 +112,8 @@ class Profile {
 	/**
 	 * mutator method for profile description
 	 * @param string $newProfileDescription
+	 * @throws \InvalidArgumentException if description is empty or insecure
+	 * @throws \RangeException if description is > 200 characters
 	 */
 	public function setProfileDescription(string $newProfileDescription) {
 		$newProfileDescription = trim($newProfileDescription);
