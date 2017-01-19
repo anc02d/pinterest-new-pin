@@ -31,13 +31,12 @@ CREATE TABLE pin (
 	pinDescription VARCHAR(140),
 	pinImage VARCHAR (256),
 	pinUrl VARCHAR (256),
-	UNIQUE(pinId),
 	UNIQUE(pinUrl),
 	PRIMARY KEY(pinId)
 );
 
 -- weak entity connecting Board and Pin
-CREATE TABLE 'boardPin' (
+CREATE TABLE boardPin (
 	boardPinPinId INT UNSIGNED NOT NULL,
 	boardPinBoardId INT UNSIGNED NOT NULL,
 	FOREIGN KEY(boardPinBoardId) REFERENCES board(boardId),
