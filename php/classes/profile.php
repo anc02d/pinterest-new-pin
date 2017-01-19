@@ -106,6 +106,12 @@ class Profile {
 	 *@param string $newProfilePasswordHash
 	 **/
 	public function setProfilePasswordHash(string $newProfilePasswordHash) {
+		if (!ctype_xdigit($newProfilePasswordHash)) {
+			throw(new \InvalidArgumentException("not a hexidecimal"));
+		}
+		if (strlen($newProfilePasswordHash) !== 128) {
+			throw(new \RangeException("hash is not correct length"));
+		}
 		$this->profilePasswordHash = $newProfilePasswordHash;
 	}
 	/**
@@ -120,6 +126,12 @@ class Profile {
 	 * @param string $newProfileSalt
 	 */
 	public function setProfileSalt(string $newProfileSalt) {
+		if (!ctype_xdigit($newProfileSalt)) {
+			throw(new \InvalidArgumentException("not a hexidecimal"));
+		}
+		if (strlen($newProfileSalt) !== 128) {
+			throw(new \RangeException("salt is not correct length"));
+		}
 		$this->profileSalt = $newProfileSalt;
 	}
 }
