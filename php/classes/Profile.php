@@ -7,7 +7,7 @@
  *@author Noel Cothren <noelcothren@gmail.com>
  *@version 1.0
  **/
-class Profile {
+class Profile implements \jsonSerializable {
 	/**
 	 * id for this profile; this is the primary key
 	 * @var int $profileId
@@ -180,6 +180,16 @@ class Profile {
 		$statement = $pdo->prepare($query);
 		$parameters = ["profileId" => $this->profileId, "profileAtHandle" => $this->profileAtHandle, "profileDescription"=> $this->profileDescription, "profilePasswordHash"=> $this->profilePasswordHash, "profileSalt"=> $this->profileSalt];
 		$statement->execute($parameters);
-		$this->profileId = intval($pdo->lastInsertId());
+		$this->profileId = intval($pdo->lastInsertId()); 
+	}
+
+	/**
+	 * @return array of state variables to be serialized to JSON
+	 */
+	public function jsonSerialize() {
+		$fields = get_object_vars($this);
+		unset($fields["profilePasswordHash"]);
+		unset($fields["profileSalt"]);
+		return($fields);
 	}
 }
